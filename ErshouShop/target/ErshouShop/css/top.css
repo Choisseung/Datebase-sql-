@@ -1,0 +1,55 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+img{border:0;}
+#header{
+    height:75px;
+    background:url("../images/微信背景图.png") repeat-x;/*沿x轴平铺*/
+}
+.header-nav{
+    width:990px;
+    height:75px;/*如果没有固定高度 就要执行after*/
+    margin:auto;
+    /* border:1px solid #fff; */
+}
+.header-nav:after{
+    content:"";
+    display:block;
+    clear:both;
+    margin-right:20px;
+
+}
+#logo{
+    float:left;/*清除浮动要看父级元素 防止高度塌陷*/
+    height:20px;
+    padding-top:15px;
+    margin-right:20px;
+}
+.h-content{
+    float:left;/*内容撑开宽度*/
+    height:50px;/*padding-top撑大了25px 所以高度要75-25=50*/
+    padding-top:25px;
+    /* border:1px solid #fff; */
+}
+
+.h-content li{
+    float:left;
+    width:85px;
+    height:40px;
+    /* border:1px solid #fff; */
+    line-height:40px;
+    text-align:center;/*文字居中*/
+    font-size:14px;
+}
+.h-content li a{
+    display:block;
+    width:100%;/*整个a标签都能点击*/
+    height:100%;/*整个a标签都能点击*/
+    color:#fff;
+
+}
+
+.h-content li:hover{
+    background:url('../images/red.png') no-repeat;
+}

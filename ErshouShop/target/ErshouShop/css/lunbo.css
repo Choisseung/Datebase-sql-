@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    background-color: white;
+}
+
+/*w:600 h:400*/
+#wrap {
+    position: relative;
+    width: 1920px;
+    height: 700px;
+    border: 1px solid black;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+.pic {
+    position: absolute;
+    width: 13440px;
+    height: 100%;
+    top: 0;
+
+}
+.pic li {
+    float:left;
+}
+
+/*width 600*/
+.pic li img {
+    width: 1920px;
+    height: 700px;
+}
+.prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 200px;
+    left: 10px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+
+    cursor: pointer;
+    color: grey;
+    z-index: 3;
+}
+.prev:hover {
+    opacity: .6;
+}
+
+.prev span {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 200px;
+    right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: grey;
+    z-index: 3;
+}
+.next:hover {
+    opacity: .6;
+
+}
+.next span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tab {
+    position:absolute;
+    width: 180px;
+    right:200px;
+    padding:10px;
+    bottom:20px;
+    border-radius: 15px;
+    background-color:rgba(0, 0, 0, 0.2);
+
+}
+.tab li{
+    float:left;
+    width:20px;
+    height:20px;
+    margin:10px 5px;
+    border:2px solid grey;
+    opacity: 0.5;
+    border-radius:50%;
+    cursor: pointer;
+
+
+}
+.tab li.on{
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+}

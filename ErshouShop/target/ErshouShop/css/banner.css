@@ -1,0 +1,115 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+img{border:0;}
+.clearfix:after{/* 给按钮清除浮动 */
+	content:'';
+	display:block;
+	clear:both;
+}
+#banner{
+	position:relative;
+	width:1226px;
+	height:460px;
+	margin:100px auto;
+	border:1px solid red;
+
+}
+.banner-con li{
+	position:absolute;
+
+}
+.banner-btn {
+	position:absolute;
+	right:20px;
+	bottom:10px;
+}
+.banner-btn span{
+	float:left;
+	width:6px;
+	height:6px;
+	margin:0 5px;
+	background-color:#666;
+	border:2px solid #ccc;
+	border-radius:50%;
+
+}
+.banner-btn span:hover{
+	background-color:#eee;
+}
+
+/*menu部分*/
+.banner-menu{
+	position:relative;
+	width:234px;
+	height:420px;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:rgba(0,0,0,.5);
+}
+.main-menu > li{
+	height:42px;
+
+}
+.main-menu > li > a{
+	display:block;
+	height:100%;
+	padding: 0 20px;
+	color:#fff;
+	font-size:15px;
+	line-height:42px;/* 行高 字与字的距离是行间距=行高-字体大小 */
+	/* text-indent:20px;首行缩进	第一排第一个字 和前面的具体 */
+}
+.main-menu > li > a > span{
+	float:right;
+}
+.main-menu > li:hover{
+	background-color:orange;
+}
+
+.sub-menu{
+	display:none;
+	position:absolute;/* 最终参照 banner-menu这个盒子 */
+	top:0;
+	left:234px;
+	width:750px;
+	height:458px;
+	border:1px solid #ccc;
+	border-left:0;
+	background-color:white;
+}
+.main-menu > li:hover .sub-menu{
+	display:block;
+}
+.sub-menu ul{
+	float:left;
+	
+}
+.sub-menu li{
+	width:250px;
+	height:76px;
+	line-height:76px;
+	
+}
+.sub-menu li a{
+	display:block;
+	height:100%;
+	text-indent:20px;
+	color:#000;
+
+}
+.sub-menu li img{
+	width:40px;
+	height:40px;
+	margin-right:5px;
+	vertical-align:middle;
+
+}
+.sub-menu li span{
+	vertical-align:middle;
+
+}
+.sub-menu li a span:hover{
+	color:orange;
+}

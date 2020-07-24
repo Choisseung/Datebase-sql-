@@ -1,0 +1,67 @@
+.banner-menu{
+    position: relative;
+    width:234px;
+    height:660px;
+    margin-left: 51px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+.main-menu > li{
+    height: 100px;
+}
+
+.main-menu > li > a{
+    display: block;
+    height: 100%;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 42px;
+    text-indent: 20px;
+}
+
+.main-menu > li > a > span{
+    float: right;
+}
+.main-menu > li:hover{
+    background-color: orange;
+}
+.sub-menu{
+    display: none;
+    position: absolute;/*最终参照banner-menu这个盒子*/
+    top: 0;
+    left: 234px;
+    width: 600px;
+    height: 700px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    background-color: #fff;
+}
+.main-menu > li:hover .sub-menu{
+    display: block;
+}
+.sub-menu li{
+    width: 300px;
+    height: 76px;
+    line-height: 76px;
+}
+.sub-menu ul{
+    float: left;
+}
+.sub-menu li a {
+    display: block;/*让整个区域都可以点击*/
+    height: 100%;
+    text-indent:20px ;
+}
+.sub-menu li img{
+    width: 40px;
+    height: 40px;
+
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.sub-menu  li span{
+    vertical-align: middle;
+}

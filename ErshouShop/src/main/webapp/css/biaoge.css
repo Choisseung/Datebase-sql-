@@ -1,0 +1,16 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+img{border:0;}
+
+table{
+    width: 400px;
+    margin :auto;
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{border:1px solid #000;margin:20px;}
+th{height:40px;}
